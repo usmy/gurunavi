@@ -103,7 +103,7 @@ header .inner .button {
 
 @media screen and (max-width: 767px) {
   .search_bar span {
-    margin: 8px 0;
+    display: none;
   }
 }
 
@@ -126,7 +126,7 @@ header .inner .button {
   }
 
   .freeword_bar input {
-    margin: 0;
+    margin-bottom: 8px;
   }
 }
 
