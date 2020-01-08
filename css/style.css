@@ -1,0 +1,276 @@
+body {
+  background-color: #F5F5F5;
+}
+
+p {
+  color: #0A0A0A;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .inner {
+    margin: 0 24px;
+  }
+}
+
+
+/* ヘッダー */
+header {
+  margin-bottom: 80px;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    margin-bottom: 40px;
+  }
+}
+
+header .inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+header .inner .button {
+  background-color: #FE9243;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+/* 検索 */
+.container {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  padding: 32px 40px;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 24px 32px;
+  }
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.description {
+  text-align: center;
+  color: #707070;
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+.search_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .search_bar {
+    display: block;
+  }
+}
+
+.search_bar span {
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .search_bar span {
+    margin: 8px 0;
+  }
+}
+
+.freeword_bar::before {
+  content: "フリーワード";
+  display: block;
+  font-size: 12px;
+}
+
+.freeword_bar {
+  position: relative;
+  min-width: 320px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .freeword_bar {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .freeword_bar input {
+    margin: 0;
+  }
+}
+
+.distance_bar::before {
+  content: "半径";
+  display: block;
+  font-size: 12px;
+}
+
+.distance_bar {
+  position: relative;
+  min-width: 120px;
+}
+
+.search_bar-btn .btn {
+  text-align: center;
+  background-color: #DA1A2D;
+  border-radius: 4px;
+  margin: 0;
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .search_bar-btn .btn {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+/* カード */
+.card {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  padding: 0 16px 16px;
+}
+
+/* .card p {
+  margin-bottom: 0 !important;
+} */
+
+.sample-box {
+  position: relative;
+}
+
+.sample-box img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+.card a {
+  color: #4F453E;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+.card-title p {
+  margin: 0;
+  min-height: 50px;
+}
+
+.favorite {
+  min-width: 40px;
+  min-height: 40px;
+  color: #FBC49D;
+  background-color: #F8E6C8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-section-text {
+  font-size: 14px;
+  margin-bottom: 8px !important;
+}
+
+.card-section-access {
+  font-size: 12px;
+}
+
+.card-section-access p {
+  margin: 0;
+}
+
+.on {
+  color: #f80376;
+}
+
+.close {
+  display: none !important;
+}
+
+.modal_block {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 400px;
+  background-color:#ffffff;
+  border-radius: 4px;
+  padding: 16px 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 320px;
+    padding: 16px 24px;
+  }
+}
+
+.modal-card-title p {
+  font-weight: bold;
+  height: auto;
+}
+
+.detail {
+  font-size: 14px;
+}
+
+.detail p {
+  margin-bottom: 8px;
+}
+
+
+.credit {
+  text-align: center;
+  margin-bottom: 40px;
+}
