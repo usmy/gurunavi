@@ -79,8 +79,8 @@ let xhttp = new XMLHttpRequest();
 xhttp.onload = function () {
   let paging = document.getElementById("paging");
   let res = JSON.parse(xhttp.responseText);
-  let hit_per_page = res.hit_per_page;
-  MAIN_BLOCK.insertAdjacentHTML('beforebegin','<div>'+ hit_per_page +'</div>');
+  // let hit_per_page = res.hit_per_page;
+  // MAIN_BLOCK.insertAdjacentHTML('beforebegin','<div>'+ hit_per_page +'</div>');
   // let totalHit = res.total_hit_count;
   // MAIN_BLOCK.insertAdjacentHTML('beforebegin','<div>'+ totalHit +'</div>');
   // for (let i = 0; i < totalHit/12+1; i++) {
