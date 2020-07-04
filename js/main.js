@@ -134,7 +134,7 @@ class CardItem {
 
  card_item(id, title, text, image, line, station) {
    return `
-   <div class="card" style="width: 300px;" onclick="openmodal('${id}')" >
+   <div class="card" onclick="openmodal('${id}')" >
     <input type='hidden' id="modal-id" value='${id}'>
        <a>
          <div class="card-title">
